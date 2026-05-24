@@ -107,7 +107,7 @@
                                     {{ $ticket->participant_id_number }}
                                 </td>
                                 <td class="px-6 py-4 text-xs">
-                                    {{ $ticket->class ? $ticket->class->name : 'Guru' }}
+                                    {{ $ticket->schoolClass ? $ticket->schoolClass->name : 'Guru' }}
                                 </td>
                                 <td class="px-6 py-4">
                                     @if($ticket->order->receipt_path)

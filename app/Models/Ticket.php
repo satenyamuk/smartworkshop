@@ -29,7 +29,7 @@ class Ticket extends Model
         return $this->belongsTo(Workshop::class);
     }
 
-    public function class()
+    public function schoolClass()
     {
         return $this->belongsTo(SchoolClass::class, 'class_id');
     }

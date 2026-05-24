@@ -14,7 +14,7 @@ class TicketController extends Controller
         $tickets = Ticket::whereHas('order', function ($query) {
             $query->where('user_id', Auth::id());
         })
-        ->with(['workshop', 'class', 'order'])
+        ->with(['workshop', 'schoolClass', 'order', 'workshop.instructor', 'workshop.category'])
         ->orderBy('created_at', 'desc')
         ->get();
 

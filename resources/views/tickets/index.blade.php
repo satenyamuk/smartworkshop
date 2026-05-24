@@ -73,7 +73,7 @@
                             <div>
                                 <p class="text-gray-400 mb-0.5 font-medium">Kelas / Status</p>
                                 <p class="text-gray-700 font-semibold">
-                                    {{ $ticket->class ? $ticket->class->name : 'Guru / Staf' }}
+                                    {{ $ticket->schoolClass ? $ticket->schoolClass->name : 'Guru / Staf' }}
                                 </p>
                             </div>
                         </div>

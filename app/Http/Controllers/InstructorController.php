@@ -30,7 +30,7 @@ class InstructorController extends Controller
 
         // Muat semua tiket peserta baik aktif maupun dibatalkan
         $tickets = Ticket::where('workshop_id', $workshop->id)
-            ->with(['class', 'order.user'])
+            ->with(['schoolClass', 'order.user'])
             ->orderBy('created_at', 'desc')
             ->get();
 

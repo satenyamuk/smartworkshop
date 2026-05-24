@@ -15,6 +15,7 @@ class Workshop extends Model
         'start_at',
         'end_at',
         'location',
+        'whatsapp_number',
         'capacity',
         'tickets_sold',
         'price',

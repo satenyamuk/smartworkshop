@@ -24,6 +24,8 @@ class WorkshopController extends Controller
             } elseif ($role === 'teacher') {
                 $query->whereIn('audience', ['teacher', 'public']);
             }
+            // Admin dan Panitia (instructor) bisa lihat semua workshop published
+            // tanpa batasan audience
         } else {
             $query->where('audience', 'public');
         }
